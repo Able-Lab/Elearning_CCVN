@@ -322,10 +322,10 @@
             ============================================= -->
 <style>
     
-.btn_menu:hover {
+.nav-menu li a:hover {
 
 
-color:#fff;
+color:#fff !important;
 
 }
 
