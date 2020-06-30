@@ -350,7 +350,12 @@ color:#fff !important;
     background: #ffff;
     text-align: center;
 }
-
+.right_sider_bar ul {
+    list-style: none;
+}
+.right_sider_bar i {
+    font-size: 30px;
+}
 
 </style>
 
