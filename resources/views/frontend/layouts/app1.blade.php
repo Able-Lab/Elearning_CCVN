@@ -87,17 +87,7 @@
 
     <!-- Start of Header section
         ============================================= -->
-<style>
-    
-.btn_menu:hover{
 
-
-color:#fff;
-
-}
-
-
-</style>
         <header>
             <div id="main-menu" class="main-menu-container" style="
     background: #ffffff;
@@ -330,7 +320,17 @@ color:#fff;
         </header>
         <!-- Start of Header section
             ============================================= -->
+<style>
+    
+.btn_menu:hover {
 
+
+color:#fff;
+
+}
+
+
+</style>
 
         @yield('content')
         @include('cookieConsent::index')
