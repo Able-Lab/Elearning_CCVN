@@ -139,7 +139,10 @@
 ">
                                                             <a href="{{asset($menu->link)}}"
                                                                class="nav-link {{ active_class(Active::checkRoute('frontend.user.dashboard')) }}"
-                                                               id="menu-{{$menu->id}}">{{trans('custom-menu.'.$menu_name.'.'.str_slug($menu->label))}}</a>
+                                                               id="menu-{{$menu->id}}"  style="
+     
+    color: #000 !important;
+">{{trans('custom-menu.'.$menu_name.'.'.str_slug($menu->label))}}</a>
                                                         </li>
 
                                                     @else
@@ -147,7 +150,10 @@
      
     color: #000 !important;
 ">
-                                                            <a href="#!">{{trans('custom-menu.'.$menu_name.'.'.str_slug($menu->label))}}</a>
+                                                            <a href="#!"  style="
+     
+    color: #000 !important;
+">{{trans('custom-menu.'.$menu_name.'.'.str_slug($menu->label))}}</a>
                                                             <ul class="sub-menu" style="
      
     color: #000 !important;
