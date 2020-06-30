@@ -87,7 +87,17 @@
 
     <!-- Start of Header section
         ============================================= -->
+<style>
+    
+.btn_menu:hover{
 
+
+color:#fff;
+
+}
+
+
+</style>
         <header>
             <div id="main-menu" class="main-menu-container" style="
     background: #ffffff;
@@ -124,7 +134,7 @@
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <nav class="navbar-menu text-center float-center">
-                                <div class="nav-menu ul-li" style="
+                                <div class="nav-menu ul-li btn_menu" style="
      
     color: #000 !important;
 ">
@@ -140,7 +150,7 @@
     color: #000 !important;
 ">
                                                             <a href="{{asset($menu->link)}}"
-                                                               class="nav-link {{ active_class(Active::checkRoute('frontend.user.dashboard')) }}"
+                                                               class="nav-link {{ active_class(Active::checkRoute('frontend.user.dashboard')) }} btn_menu"
                                                                id="menu-{{$menu->id}}"  style="
      
     color: #000 !important;
@@ -148,7 +158,7 @@
                                                         </li>
 
                                                     @else
-                                                        <li class="menu-item-has-children ul-li-block" style="
+                                                        <li class="menu-item-has-children ul-li-block btn_menu" style="
      
     color: #000 !important;
 ">
