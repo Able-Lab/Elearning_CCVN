@@ -88,10 +88,19 @@
     <!-- Start of Header section
         ============================================= -->
 <div class="right_sider_bar">
-  <ul>
-    <li><a href="https://facebook.com/CCVNaucalpan" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-    <li><a href="#"><i class="fab fa-instagram" target="_blank" aria-hidden="true"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter" target="_blank" aria-hidden="true"></i></a></li>
+  <ul style="
+    margin-right: 39px;
+    color: black;
+">
+    <li style="
+    margin-bottom: 15px;
+"> <a href="https://facebook.com/CCVNaucalpan" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+    <li style="
+    margin-bottom: 15px;
+"><a href="#"><i class="fab fa-instagram" target="_blank" aria-hidden="true"></i></a></li>
+    <li style="
+    margin-bottom: 15px;
+"><a href="#"><i class="fab fa-twitter" target="_blank" aria-hidden="true"></i></a></li>
   </ul>
 </div>
 
