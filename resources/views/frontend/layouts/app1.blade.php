@@ -87,6 +87,14 @@
 
     <!-- Start of Header section
         ============================================= -->
+<div class="right_sider_bar">
+  <ul>
+    <li><a href="https://facebook.com/CCVNaucalpan" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram" target="_blank" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter" target="_blank" aria-hidden="true"></i></a></li>
+  </ul>
+</div>
+
 
         <header>
             <div id="main-menu" class="main-menu-container" style="
@@ -327,6 +335,20 @@
 
 color:#fff !important;
 
+}
+
+.right_sider_bar {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    right: 0;
+    z-index: 10;
+    background: #ffff;
+    text-align: center;
 }
 
 
