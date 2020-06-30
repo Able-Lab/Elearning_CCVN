@@ -110,7 +110,9 @@
                             <div class="cart-search float-right ul-li">
                                 <ul>
                                     <li>
-                                        <a href="{{route('cart.index')}}"><i class="fas fa-shopping-bag"></i>
+                                        <a href="{{route('cart.index')}}"><i class="fas fa-shopping-bag" style="
+    color: #000;
+"> </i>
                                             @if(auth()->check() && Cart::session(auth()->user()->id)->getTotalQuantity() != 0)
                                                 <span class="badge badge-danger position-absolute">{{Cart::session(auth()->user()->id)->getTotalQuantity()}}</span>
                                             @endif
@@ -121,7 +123,7 @@
 
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
-                            <nav class="navbar-menu float-center">
+                            <nav class="navbar-menu text-center float-center">
                                 <div class="nav-menu ul-li" style="
      
     color: #000 !important;
