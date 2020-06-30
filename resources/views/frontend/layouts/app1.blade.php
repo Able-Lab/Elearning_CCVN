@@ -87,15 +87,23 @@
 
     <!-- Start of Header section
         ============================================= -->
+
         <header>
-            <div id="main-menu" class="main-menu-container">
+            <div id="main-menu" class="main-menu-container" style="
+    background: #ffffff;
+    padding: 10px 0px;
+    color: #000;
+">
                 <div class="main-menu">
                     <div class="container">
                         <div class="navbar-default">
-                            <div class="navbar-header float-left">
-                                <a class="navbar-brand text-uppercase" href="{{url('/')}}">
-                                    {{--<img src="{{asset("storage/logos/".config('logo_w_image'))}}" alt="logo">--}}
-                                    <img src="{{asset("storage/logos/".config('logo_w_image'))}}" alt="logo">
+                            <div class="navbar-header float-right" style="
+     
+    color: #000;
+">
+                                <a class="navbar-brand" href="{{url('/')}}">
+                                    {{--<img src="{{asset("storage/logos/".config('logo_b_image'))}}" alt="logo">--}}
+                                    <img src="{{asset("storage/logos/".config('logo_b_image'))}}" alt="logo">
                                 </a>
                             </div><!-- /.navbar-header -->
 
@@ -113,7 +121,7 @@
 
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
-                            <nav class="navbar-menu float-right">
+                            <nav class="navbar-menu float-center">
                                 <div class="nav-menu ul-li">
                                     <ul>
                                         @if(count($custom_menus) > 0 )
@@ -122,16 +130,25 @@
                                                     {{--@if($menu->subs && (count($menu->subs) > 0))--}}
                                                 @if($menu['id'] == $menu['parent'])
                                                     @if(count($menu->subs) == 0)
-                                                        <li class="">
+                                                        <li class="" style="
+     
+    color: #000;
+">
                                                             <a href="{{asset($menu->link)}}"
                                                                class="nav-link {{ active_class(Active::checkRoute('frontend.user.dashboard')) }}"
                                                                id="menu-{{$menu->id}}">{{trans('custom-menu.'.$menu_name.'.'.str_slug($menu->label))}}</a>
                                                         </li>
 
                                                     @else
-                                                        <li class="menu-item-has-children ul-li-block">
+                                                        <li class="menu-item-has-children ul-li-block" style="
+     
+    color: #000;
+">
                                                             <a href="#!">{{trans('custom-menu.'.$menu_name.'.'.str_slug($menu->label))}}</a>
-                                                            <ul class="sub-menu">
+                                                            <ul class="sub-menu" style="
+     
+    color: #000;
+">
                                                                 @foreach($menu->subs as $item)
                                                                     @include('frontend.layouts.partials.dropdown', $item)
                                                                 @endforeach
