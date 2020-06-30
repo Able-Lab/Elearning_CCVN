@@ -170,16 +170,25 @@
 
                                         @if(auth()->check())
                                             <li class="menu-item-has-children ul-li-block">
-                                                <a href="#!">{{ $logged_in_user->name }}</a>
+                                                <a href="#!"  style="
+     
+    color: #000 !important;
+">{{ $logged_in_user->name }}</a>
                                                 <ul class="sub-menu">
                                                     @can('view backend')
                                                         <li>
-                                                            <a href="{{ route('admin.dashboard') }}">@lang('navs.frontend.dashboard')</a>
+                                                            <a href="{{ route('admin.dashboard') }}"  style="
+     
+    color: #000 !important;
+">@lang('navs.frontend.dashboard')</a>
                                                         </li>
                                                     @endcan
 
                                                     <li>
-                                                        <a href="{{ route('frontend.auth.logout') }}">@lang('navs.general.logout')</a>
+                                                        <a href="{{ route('frontend.auth.logout') }}"  style="
+     
+    color: #000 !important;
+">@lang('navs.general.logout')</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -187,7 +196,10 @@
                                             <li>
                                                 <div class="log-in mt-0">
                                                     <a id="openLoginModal" data-target="#myModal"
-                                                       href="#">@lang('navs.general.login')</a>
+                                                       href="#"  style="
+     
+    color: #000 !important;
+">@lang('navs.general.login')</a>
                                                     {{--@include('frontend.layouts.modals.loginModal')--}}
 
                                                 </div>
@@ -195,7 +207,10 @@
                                         @endif
                                             @if(count($locales) > 1)
                                             <li class="menu-item-has-children ul-li-block">
-                                                <a href="#">
+                                                <a href="#"  style="
+     
+    color: #000 !important;
+">
                                                     <span class="d-md-down-none">@lang('menus.language-picker.language')
                                                         ({{ strtoupper(app()->getLocale()) }})</span>
                                                 </a>
@@ -204,7 +219,10 @@
                                                         @if($lang != app()->getLocale())
                                                             <li>
                                                                 <a href="{{ '/lang/'.$lang }}"
-                                                                   class=""> @lang('menus.language-picker.langs.'.$lang)</a>
+                                                                   class=""  style="
+     
+    color: #000 !important;
+"> @lang('menus.language-picker.langs.'.$lang)</a>
                                                             </li>
                                                         @endif
                                                     @endforeach
