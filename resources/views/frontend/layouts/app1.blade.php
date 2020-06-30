@@ -97,7 +97,7 @@
                 <div class="main-menu">
                     <div class="container">
                         <div class="navbar-default">
-                            <div class="navbar-header float-right" style="
+                            <div class="navbar-header float-left" style="
      
     color: #000;
 ">
@@ -122,7 +122,10 @@
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <nav class="navbar-menu float-center">
-                                <div class="nav-menu ul-li">
+                                <div class="nav-menu ul-li" style="
+     
+    color: #000 !important;
+">
                                     <ul>
                                         @if(count($custom_menus) > 0 )
                                             @foreach($custom_menus as $menu)
@@ -132,7 +135,7 @@
                                                     @if(count($menu->subs) == 0)
                                                         <li class="" style="
      
-    color: #000;
+    color: #000 !important;
 ">
                                                             <a href="{{asset($menu->link)}}"
                                                                class="nav-link {{ active_class(Active::checkRoute('frontend.user.dashboard')) }}"
@@ -142,12 +145,12 @@
                                                     @else
                                                         <li class="menu-item-has-children ul-li-block" style="
      
-    color: #000;
+    color: #000 !important;
 ">
                                                             <a href="#!">{{trans('custom-menu.'.$menu_name.'.'.str_slug($menu->label))}}</a>
                                                             <ul class="sub-menu" style="
      
-    color: #000;
+    color: #000 !important;
 ">
                                                                 @foreach($menu->subs as $item)
                                                                     @include('frontend.layouts.partials.dropdown', $item)
